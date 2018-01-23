@@ -12,6 +12,7 @@ namespace Lab2
         {
             string name;
             int number;
+            Console.WriteLine("Welcome to my program Odd and even Number");
             Console.Write("Enter your name: ");
             name = Console.ReadLine();
             Console.WriteLine();
@@ -61,11 +62,13 @@ namespace Lab2
 
             }
 
-            Console.Write("continue(Y/N)");
+            Console.Write("continue(Y/N) : ");
             continue_run = Console.ReadKey().Key == ConsoleKey.Y;
         }
             //end while loop
-         //   Console.ReadKey();
+            Console.WriteLine();
+            Console.WriteLine("Thank you for using my program, Bye !");
+          Console.ReadKey();
 
         }
     }
