@@ -12,7 +12,8 @@ namespace Lab2
         {
             string name;
             int number;
-            Console.WriteLine("Welcome to my program Odd and even Number");
+            Console.WriteLine("Welcome to my program OddAndEven Numbers");
+            Console.WriteLine();
             Console.Write("Enter your name: ");
             name = Console.ReadLine();
             Console.WriteLine();
@@ -25,16 +26,11 @@ namespace Lab2
                 Console.WriteLine();
                 if (number >= 1 && number <= 100)
                 {
-                    if (number % 2 == 1 && number<=60)
+                    if (number % 2 == 1 )
                     {
                         Console.WriteLine("The number you entered is odd");
                     }
 
-                    else 
-                    if (number % 2 == 1 && number > 60)
-                    {
-                        Console.WriteLine("The number you entered is Odd");
-                    }
                     else
                     if (number % 2 == 0)
                     {
@@ -53,22 +49,27 @@ namespace Lab2
                             Console.WriteLine("The number entered is Even");
                         }
                     }
-                    
-            }
-            else
+
+                    if (number % 2 == 1 && number > 60)
+                    {
+                        Console.WriteLine("The number you entered is Odd");
+                    }
+
+
+                }
+                else
             {
-                Console.WriteLine("hey " + name + " Your entered a number out range 1-100");
-             //   Console.ReadKey();
-
+                Console.WriteLine("Hey " + name + " You entered a number out of range 1-100");
+            
             }
-
+            Console.WriteLine();
             Console.Write("continue(Y/N) : ");
             continue_run = Console.ReadKey().Key == ConsoleKey.Y;
         }
             //end while loop
-            Console.WriteLine();
-            Console.WriteLine("Thank you for using my program, Bye !");
-          Console.ReadKey();
+        Console.WriteLine();
+        Console.WriteLine("Thank you for using my program, Bye !");
+        Console.ReadKey();
 
         }
     }
