@@ -68,7 +68,7 @@ namespace Lab2
         }
             //end while loop
         Console.WriteLine();
-        Console.WriteLine("Thank you for using my program, Bye !");
+        Console.WriteLine("Thank you for using my program, Bye ! \n Press anyKey to exit");
         Console.ReadKey();
 
         }
